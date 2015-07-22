@@ -6,7 +6,7 @@
 4. In your console run this command: mono "Path to TrollDetector.exe"  
   
 **II Testing the web service**  
-1. To obtain a sample text and list of words to excluded, run the service and make a GET request to the URL localhost:8000/TrollDetector/  
+1. To obtain a sample text and list of words to be excluded, run the service and make a GET request to the URL localhost:8000/TrollDetector/  
 2. To test word count, run the service and make a POST request to the URL localhost:8000/TrollDetector/ with a JSON object in the Request body that looks like:  
   {  
     Text: "some text",  
