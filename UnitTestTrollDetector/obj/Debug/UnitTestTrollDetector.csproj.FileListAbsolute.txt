@@ -1,0 +1,7 @@
+C:\Projects\TrollDetector\UnitTestTrollDetector\bin\Debug\UnitTestTrollDetector.dll
+C:\Projects\TrollDetector\UnitTestTrollDetector\bin\Debug\UnitTestTrollDetector.pdb
+C:\Projects\TrollDetector\UnitTestTrollDetector\bin\Debug\TrollDetector.dll
+C:\Projects\TrollDetector\UnitTestTrollDetector\bin\Debug\TrollDetector.pdb
+C:\Projects\TrollDetector\UnitTestTrollDetector\obj\Debug\UnitTestTrollDetector.csprojResolveAssemblyReference.cache
+C:\Projects\TrollDetector\UnitTestTrollDetector\obj\Debug\UnitTestTrollDetector.dll
+C:\Projects\TrollDetector\UnitTestTrollDetector\obj\Debug\UnitTestTrollDetector.pdb
