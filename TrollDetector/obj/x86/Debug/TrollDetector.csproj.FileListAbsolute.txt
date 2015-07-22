@@ -1,0 +1,5 @@
+C:\Projects\Animoto\TrollDetector\TrollDetector\bin\Debug\TrollDetector.exe.config
+C:\Projects\Animoto\TrollDetector\TrollDetector\bin\Debug\TrollDetector.exe
+C:\Projects\Animoto\TrollDetector\TrollDetector\bin\Debug\TrollDetector.pdb
+C:\Projects\Animoto\TrollDetector\TrollDetector\obj\x86\Debug\TrollDetector.exe
+C:\Projects\Animoto\TrollDetector\TrollDetector\obj\x86\Debug\TrollDetector.pdb
