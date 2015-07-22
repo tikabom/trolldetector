@@ -20,44 +20,44 @@ namespace TrollDetector
             TrollResponse troll = new TrollResponse();
             Random rand = new Random();
             
-			/** choose a text file at random to give to the client **/
-			int textFilename = rand.Next(0, 5);
+	    /** choose a text file at random to give to the client **/
+	    int textFilename = rand.Next(0, 5);
             string text = File.ReadAllText("../../Text/" + textFilename + ".txt");
             /** **/
 
-			/** split text on different punctuations **/
-			char[] separators = {'.', ' ', ',', '!', ';', '-'};
+	    /** split text on different punctuations **/
+	    char[] separators = {'.', ' ', ',', '!', ';', '-'};
             string[] wordsInText = text.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-			/** **/
+	    /** **/
             
-			/** create a set of unique words in the text **/
-			HashSet<string> uniqueWords = new HashSet<string>(StringComparer.CurrentCultureIgnoreCase);
+	    /** create a set of unique words in the text **/
+	    HashSet<string> uniqueWords = new HashSet<string>(StringComparer.CurrentCultureIgnoreCase);
             foreach (string word in wordsInText)
             {
                 uniqueWords.Add(word);
             }
-			/** **/
+	    /** **/
 
             int len = uniqueWords.Count;
 
             troll.Text = text;
 
-			/** if there is only one unique word in text exclude word list will be empty **/
+	    /** if there is only one unique word in text exclude word list will be empty **/
             if (len == 1)
             {
                 return serializer.Serialize(troll);            
             }
-			/** **/
+	    /** **/
 
-			/** select words to be excluded from count at random **/
+	    /** select words to be excluded from count at random **/
             int excludeLen = rand.Next(0, len - 1);
-			HashSet<string> excludeList = new HashSet<string>();
+	    HashSet<string> excludeList = new HashSet<string>();
             for (int i = 0; i < excludeLen; i++)
             {
                 excludeList.Add(uniqueWords.ElementAt(rand.Next(0 , len - 1)));
             }            
             troll.Exclude = excludeList.ToArray();
-			/** **/
+	    /** **/
 
             return serializer.Serialize(troll);
         }
