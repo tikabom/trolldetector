@@ -11,7 +11,9 @@
   {  
     Text: "some text",  
     Exclude: ["some"],  
-    WordCount: [{"text", 1}]  
+    WordCount: {  
+                "text": 1  
+               }  
   }  
 *Assumption:* The service expects the client to send its request in JSON containing three properties: Text (text used for the word count), Exclude (list of words that should not be counted), WordCount (every word that is counted and its corresponding count).  
   
